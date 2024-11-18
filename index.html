@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estacionamento</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/css/styles.css">
+</head>
+<body>
+    <!-- Barra Superior -->
+    <div class="bg-dark text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span>Bem-vindo ao Sistema de Estacionamento</span>
+            <div>
+                <a href="#" class="text-white me-3"><i class="bi bi-telephone-fill"></i> Contato</a>
+                <a href="#" class="text-white"><i class="bi bi-info-circle-fill"></i> Ajuda</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Estacionamento</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.php">Painel de Controle</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cadastros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="form_cliente.html"><i class="bi bi-person-fill"></i> Clientes</a></li>
+                            <li><a class="dropdown-item" href="form_tipo_pagto.html"><i class="bi bi-credit-card-2-front-fill"></i> Tipos de Pagamento</a></li>
+                            <li><a class="dropdown-item" href="form_marcas_carro.html"><i class="bi bi-car-front-fill"></i> Marcas de Carro</a></li>
+                            <li><a class="dropdown-item" href="form_caucao_cliente.php"><i class="bi bi-shield-check"></i> Cauções</a></li>
+                            <li><a class="dropdown-item" href="form_carro.php"><i class="bi bi-car-front"></i> Carros</a></li>
+                            <li><a class="dropdown-item" href="form_venda.php"><i class="bi bi-cart-fill"></i> Vendas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="relatorio.php">Relatórios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Sistema de Estacionamento</h1>
+        <hr class="mb-5">
+        <div class="row text-center justify-content-center">
+            <!-- Card: Cadastro de Cliente -->
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-person-fill"></i> Cadastro de Cliente</h5>
+                        <p class="card-text">Gerencie os dados dos clientes de forma prática e organizada.</p>
+                        <a href="form_cliente.html" class="btn btn-primary btn-sm">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Cadastro de Tipo de Pagamento -->
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-credit-card-2-front-fill"></i> Cadastro de Tipo de Pagamento</h5>
+                        <p class="card-text">Adicione ou gerencie os tipos de pagamento disponíveis.</p>
+                        <a href="form_tipo_pagto.html" class="btn btn-primary btn-sm">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Cadastro de Marcas de Carro -->
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-car-front-fill"></i> Cadastro de Marcas de Carro</h5>
+                        <p class="card-text">Mantenha um registro atualizado das marcas de veículos.</p>
+                        <a href="form_marcas_carro.html" class="btn btn-primary btn-sm">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Cadastro de Caução -->
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-shield-check"></i> Cadastro de Caução Cliente</h5>
+                        <p class="card-text">Registre as cauções associadas aos clientes.</p>
+                        <a href="form_caucao_cliente.php" class="btn btn-success btn-sm">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Cadastro de Carro -->
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-car-front"></i> Cadastro de Carro</h5>
+                        <p class="card-text">Adicione novos veículos ao sistema de forma simples.</p>
+                        <a href="form_carro.php" class="btn btn-success btn-sm">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Cadastro de Venda -->
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-cart-fill"></i> Cadastro de Venda</h5>
+                        <p class="card-text">Registre vendas associadas aos clientes e veículos.</p>
+                        <a href="form_venda_cliente.php" class="btn btn-success btn-sm">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2024 Sistema de Estacionamento | Desenvolvido por WCC</p>
+        <small>Contato: <a href="mailto:illiam@gmail.com" class="text-warning">william@gmail.com</a></small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
